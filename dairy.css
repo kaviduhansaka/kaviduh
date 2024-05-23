@@ -1,0 +1,1739 @@
+:root{
+  --background-color: rgba(255, 255, 255, 0.898);
+  --background-color:rgba(255, 255, 255, 0.898);
+  --theme-color:rgb(0, 247, 255);
+}
+
+
+
+body{
+  padding: 0;
+  margin: 0;
+  background-color:var(--background-color);
+
+}
+
+.grid-container {
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+grid-gap: 10px;
+padding: 10px;
+width: 800px; /* Set your desired width */
+height: 500px; /* Set your desired height */
+}
+
+.grid-item {
+background-color: #fff;
+border: 1px solid #ddd;
+text-align: center;
+padding: 15px;
+font-size: 16px;
+}
+
+.grid-item-text {
+font-size: 14px;
+margin-top: 5px;
+}
+
+.more{
+  width: 300px;
+  display: flex;
+  left: -300px;
+}
+/*-----search bar-----*/
+/* navigation bar*/
+.navbar-container {
+display: grid;
+gap: 10px;
+padding: 2px;
+}
+
+
+.navbar {
+position: fixed;
+display: flex;
+justify-content: center;
+width: 95%;
+height: 20px;
+display: grid;
+top: 10px;
+grid-template-columns: auto 1fr;
+align-items: center;
+padding: 28px;
+left: 50%; /* Position the navbar from the center */
+transform: translateX(-50%); /* Center the navbar horizontally */
+background-color: #333;
+border-radius: 40px;
+color:var(--white-color);
+z-index: 1000;
+}
+
+.logo {
+font-size: 10px;
+
+}
+.logo img{
+position: relative;
+width: auto;
+height: 100px;
+top: -40px;
+}
+
+.nav-links {
+position: relative;
+display: grid;
+grid-template-columns: repeat(5, auto);
+gap: 50px;
+backdrop-filter: blur(40px);  
+justify-content: center; 
+padding: 2px 20px; /* Adjust padding for smaller screens */
+top: -17.5vh;
+left:55vh;
+font-family: "Oswald", sans-serif;
+}
+
+.nav-links a {
+position: relative;
+text-decoration: none;
+color: #fff;
+transition: color 0.3s;
+font-size: 20px;
+
+}
+.dropdown {
+position: relative;
+display: inline-block;
+}
+
+.dropdown-content {
+display: none;
+position: absolute;
+color: #000000;
+background-color: #f9f9f9;
+min-width: 160px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+padding: 12px 16px;
+z-index: 1;
+}
+.dropdown-content ol li a{
+color: #000000;
+}
+
+.dropdown:hover .dropdown-content {
+display: block;
+}
+
+.register{
+position: relative;
+display: flex;
+width: auto;
+height: 35px;
+top: -22vh;
+left: 160vh;
+opacity: 0.9;
+}
+.register a{
+position: relative;
+font-size: 20px;
+color: var(--background-color);
+left: 10px;
+top: px;
+text-decoration: none;
+font-family: "Oswald", sans-serif;
+}
+.cart{
+position: relative;
+display: flex;
+width: auto;
+height: 33px;
+top: -27.5vh;
+left: 175vh;
+opacity: 0.9;
+}
+
+.nav-links a:hover {
+color: var(--theme-color);
+}
+
+/* Media query for smaller screens */
+@media (max-width: 400px) {
+  .navbar {
+    padding: 15px; 
+  }
+
+  .nav-links {
+    padding: 0px 10px; 
+  }
+}
+/*mainhead image*/
+
+ 
+.main-img{
+    position: relative;
+    display: flex;
+    top: 80px;
+    height:450px;
+    width: 1500px;
+    background-repeat:no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-image: url("./images//dairy\ last_page-0001.jpg");
+    background-size:100%;
+    background-position-y: 100px;
+  
+  }
+
+  
+.main-img h1{
+  position: relative;
+  display: flex;
+  color:var(--background-color);
+  left: 37%;
+  top: 0%;
+  font-size: 120px;
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}  
+
+@media screen and (max-width: 800px) {
+  .main-img{
+    position: relative;
+    width: 100%;
+    background-size:50%;
+    background-position-y: 60px;
+    background-position-x: -250px;
+  }
+  .main-img h1{
+position: relative;
+font-size: 65px;
+  }
+}
+
+  /*products*/
+
+  .grid-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center; /* Align items horizontally at the center */
+        margin-left: 35vh;
+        margin-top: 100px;
+        width: 86%;
+      }
+      
+      .grid-item {
+        position: relative;
+        width: calc(20% - 20px); /* 25% width for 4 columns with margin */
+        height: 280px;
+        margin: 3px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+        display: flex;
+        justify-content: center; /* Align content horizontally at the center */
+        align-items: center; 
+        font-size: 18px;
+        font-weight: bold;
+      }
+      
+      .item10 {
+        background-color: whitesmoke; 
+      }
+      .item10 img{
+        position: relative;
+        height: auto;
+        width: 150px;
+        top: -60px;
+        left: 160px;
+      }
+      .item10 h1{
+        position: relative;
+        display: inline-block;
+        font-size: 17px;
+        top: 45px;
+        right: -30px;
+        font-family: "Oswald", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 400;
+      font-style: normal;
+      white-space: nowrap;
+      }
+      .price {
+        position: relative;
+        color: grey;
+        font-size: 22px;
+        top: 75px;
+        right:50px;
+      }
+
+      .item11 {
+        background-color: whitesmoke; 
+      }
+      .item11 img{
+        position: relative;
+        height: auto;
+        width: 200px;
+        top: -60px;
+        left: 145px;
+      }
+      .item11 h1{
+        position: relative;
+        font-size: 17px;
+        top: 45px;
+        right: -5px;
+        font-family: "Oswald", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 400;
+      font-style: normal;
+      white-space: nowrap;
+      }
+      .price1 {
+        position: relative;
+        color: grey;
+        font-size: 22px;
+        top: 75px;
+        right: 65px;
+      }
+      
+      .item12 {
+        background-color: whitesmoke; 
+      }
+      .item12 img{
+        position: relative;
+        height: auto;
+        width: 120px;
+        top: -60px;
+        left: 175px;
+      }
+      .item12 h1{
+        position: relative;
+        font-size: 17px;
+        top: 45px;
+        right: -50px;
+        font-family: "Oswald", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 400;
+      font-style: normal;
+      white-space: nowrap;
+      }
+      .price2 {
+        position: relative;
+        color: grey;
+        font-size: 22px;
+        top: 75px;
+        right: 45px;
+      }
+      .item13 {
+        background-color: whitesmoke;
+      }
+      .item13 img{
+        position: relative;
+        height: auto;
+        width: 160px;
+        top: -60px;
+        left: 125px;
+      }
+      .item13 h1{
+        position: relative;
+        font-size: 17px;
+        top: 45px;
+        right: -30px;
+        font-family: "Oswald", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 400;
+      font-style: normal;
+      }
+      .price3 {
+        position: relative;
+        color: grey;
+        font-size: 22px;
+        top: 75px;
+        right: 20px;
+      }
+      .item14 {
+        background-color: whitesmoke; 
+      }
+      .item14 img{
+        position: relative;
+        height: auto;
+        width: 230px;
+        top: -60px;
+        left: 125px;
+      }
+      .item14 h1{
+        position: relative;
+        font-size: 17px;
+        top: 35px;
+        right:5px;
+        font-family: "Oswald", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 400;
+      font-style: normal;
+      }
+      .price4 {
+        position: relative;
+        color: grey;
+        font-size: 22px;
+        top: 70px;
+        right: 52px;
+      }
+      .item15 {
+        background-color: whitesmoke; 
+      }
+      .item15 img{
+        position: relative;
+        height: auto;
+        width: 270px;
+        top: -70px;
+        left: 145px;
+      }
+      .item15 h1{
+        position: relative;
+        font-size: 17px;
+        top: 35px;
+        right:28px;
+        font-family: "Oswald", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 400;
+      font-style: normal;
+      white-space: nowrap;
+      }
+      .price5 {
+        position: relative;
+        color: grey;
+        font-size: 22px;
+        top: 70px;
+        right: 100px;
+      }
+      .item16 {
+        background-color: whitesmoke; 
+      }
+      .item16 img{
+        position: relative;
+        height: auto;
+        width: 160px;
+        top: -70px;
+        left: 155px;
+      }
+      .item16 h1{
+        position: relative;
+        font-size: 17px;
+        top: 35px;
+        right:-28px;
+        font-family: "Oswald", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 400;
+      font-style: normal;
+      white-space: nowrap;
+      }
+      .price6 {
+        position: relative;
+        color: grey;
+        font-size: 22px;
+        top: 70px;
+        right:45px;
+      }
+      .item17 {
+        background-color: whitesmoke; 
+      }
+      .item17 img{
+        position: relative;
+        height: auto;
+        width: 160px;
+        top: -70px;
+        left: 125px;
+      }
+      
+      .item17 h1{
+        position: relative;
+        font-size: 17px;
+        top: 35px;
+        right:-28px;
+        font-family: "Oswald", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 400;
+      font-style: normal;
+      }
+      .price7{
+        position: relative;
+        color: grey;
+        font-size: 22px;
+        top: 70px;
+        right:25px;
+      }
+      .add1{
+        position: relative;
+        display: flex;
+        top: 120px;
+        right: 150px;
+        height: 45px;
+        border-radius: 40px;
+        padding: 10px 40px;
+      }
+      .add2{
+        position: relative;
+        top: 120px;
+        right: 170px;
+        height: 45px;
+        border-radius: 40px;
+        padding: 10px 40px;
+      }
+      .add3{
+        position: relative;
+        top: 120px;
+        right: 150px;
+        height: 45px;
+        border-radius: 40px;
+        padding: 10px 40px;
+      }
+      .add4{
+        position: relative;
+        top: 120px;
+        right: 120px;
+        height: 45px;
+        border-radius: 40px;
+        padding: 10px 40px;
+      }
+      
+      .add5{
+        position: relative;
+        top: 120px;
+        right: 155px;
+        height: 45px;
+        border-radius: 40px;
+        padding: 10px 40px;
+      }
+
+      .add6{
+        position: relative;
+        top: 120px;
+        right: 200px;
+        height: 45px;
+        border-radius: 40px;
+        padding: 10px 40px;
+      }
+      .add7{
+        position: relative;
+        top: 120px;
+        right: 155px;
+        height: 45px;
+        border-radius: 40px;
+        padding: 10px 40px;
+      }
+      .add8{
+        position: relative;
+        top: 120px;
+        right: 130px;
+        height: 45px;
+        border-radius: 40px;
+        padding: 10px 40px;
+      }
+     
+
+      .grid-item:hover {
+        transition: transform 0.5s ease;
+        transform: translateY(-5px);
+        box-shadow: 0 0 px rgba(0, 0, 0, 0.228);
+      }
+                  @media screen and (max-width: 800px) {
+                    .grid-container {
+                      display: flex;
+                      flex-wrap: wrap;
+                      justify-content: center; /* Align items horizontally at the center */
+                      margin-left: 8.5vh;
+                      margin-top: -120px;
+                      width: 86%;
+                    }
+                    
+                    .grid-item {
+                      position: relative;
+                      width: calc(35% - 20px); /* 25% width for 4 columns with margin */
+                      height: 200px;
+                      margin: 3px;
+                      border: 1px solid #ccc;
+                      border-radius: 10px;
+                      box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+                      transition: transform 0.3s ease;
+                      display: flex;
+                      justify-content: center; /* Align content horizontally at the center */
+                      align-items: center; 
+                      font-size: 18px;
+                      font-weight: bold;
+                    }
+                    .item10 img{
+                      position: relative;
+                      height: auto;
+                      width: 100px;
+                      top: -50px;
+                      left: 125px;
+                    }
+                    .item10 h1{
+                      position: relative;
+                      display: inline-block;
+                      font-size: 14px;
+                      top: 35px;
+                      right: -35px;
+                      font-family: "Oswald", sans-serif;
+                    font-optical-sizing: auto;
+                    font-weight: 400;
+                    font-style: normal;
+                    white-space: nowrap;
+                    }
+                    .price {
+                      position: relative;
+                      color: grey;
+                      font-size: 18px;
+                      top: 65px;
+                      right:35px;
+                    }
+              
+                    .item11 {
+                      background-color: whitesmoke; 
+                    }
+                    .item11 img{
+                      position: relative;
+                      height: auto;
+                      width: 130px;
+                      top: -50px;
+                      left: 115px;
+                    }
+                    .item11 h1{
+                      position: relative;
+                      font-size: 14px;
+                      top: 35px;
+                      right: -17px;
+                      font-family: "Oswald", sans-serif;
+                    font-optical-sizing: auto;
+                    font-weight: 400;
+                    font-style: normal;
+                    white-space: nowrap;
+                    }
+                    .price1 {
+                      position: relative;
+                      color: grey;
+                      font-size: 18px;
+                      top: 65px;
+                      right: 45px;
+                    }
+                    
+                    .item12 {
+                      background-color: whitesmoke; 
+                    }
+                    .item12 img{
+                      position: relative;
+                      height: auto;
+                      width: 90px;
+                      top: -40px;
+                      left: 135px;
+                    }
+                    .item12 h1{
+                      position: relative;
+                      font-size: 14px;
+                      top: 40px;
+                      right: -38px;
+                      font-family: "Oswald", sans-serif;
+                    font-optical-sizing: auto;
+                    font-weight: 400;
+                    font-style: normal;
+                    white-space: nowrap;
+                    }
+                    .price2 {
+                      position: relative;
+                      color: grey;
+                      font-size: 18px;
+                      top: 65px;
+                      right: 40px;
+                    }
+                    .item13 {
+                      background-color: whitesmoke;
+                    }
+                    .item13 img{
+                      position: relative;
+                      height: auto;
+                      width: 120px;
+                      top: -50px;
+                      left: 100px;
+                    }
+                    .item13 h1{
+                      position: relative;
+                      font-size: 14px;
+                      top: 39px;
+                      right: -23px;
+                      font-family: "Oswald", sans-serif;
+                    font-optical-sizing: auto;
+                    font-weight: 400;
+                    font-style: normal;
+                    }
+                    .price3 {
+                      position: relative;
+                      color: grey;
+                      font-size: 18px;
+                      top: 65px;
+                      right: 20px;
+                    }
+                    .item14 {
+                      background-color: whitesmoke; 
+                    }
+                    .item14 img{
+                      position: relative;
+                      height: auto;
+                      width: 170px;
+                      top: -55px;
+                      left: 94px;
+                    }
+                    .item14 h1{
+                      position: relative;
+                      font-size: 14px;
+                      top: 30px;
+                      right:5px;
+                      font-family: "Oswald", sans-serif;
+                    font-optical-sizing: auto;
+                    font-weight: 400;
+                    font-style: normal;
+                    }
+                    .price4 {
+                      position: relative;
+                      color: grey;
+                      font-size: 18px;
+                      top: 55px;
+                      right: 40px;
+                    }
+                    .item15 {
+                      background-color: whitesmoke; 
+                    }
+                    .item15 img{
+                      position: relative;
+                      height: auto;
+                      width: 200px;
+                      top: -55px;
+                      left: 115px;
+                    }
+                    .item15 h1{
+                      position: relative;
+                      font-size: 14px;
+                      top: 30px;
+                      right:20px;
+                      font-family: "Oswald", sans-serif;
+                    font-optical-sizing: auto;
+                    font-weight: 400;
+                    font-style: normal;
+                    white-space: nowrap;
+                    }
+                    .price5 {
+                      position: relative;
+                      color: grey;
+                      font-size: 18px;
+                      top: 53px;
+                      right: 80px;
+                    }
+                    .item16 {
+                      background-color: whitesmoke; 
+                    }
+                    .item16 img{
+                      position: relative;
+                      height: auto;
+                      width: 120px;
+                      top: -50px;
+                      left: 120px;
+                    }
+                    .item16 h1{
+                      position: relative;
+                      font-size: 14px;
+                      top: 30px;
+                      right:-23px;
+                      font-family: "Oswald", sans-serif;
+                    font-optical-sizing: auto;
+                    font-weight: 400;
+                    font-style: normal;
+                    white-space: nowrap;
+                    }
+                    .price6 {
+                      position: relative;
+                      color: grey;
+                      font-size: 18px;
+                      top: 55px;
+                      right:40px;
+                    }
+                    .item17 {
+                      background-color: whitesmoke; 
+                    }
+                    .item17 img{
+                      position: relative;
+                      height: auto;
+                      width: 110px;
+                      top: -50px;
+                      left: 100px;
+                    }
+                    
+                    .item17 h1{
+                      position: relative;
+                      font-size: 14px;
+                      top: 29px;
+                      right:-28px;
+                      font-family: "Oswald", sans-serif;
+                    font-optical-sizing: auto;
+                    font-weight: 400;
+                    font-style: normal;
+                    }
+                    .price7{
+                      position: relative;
+                      color: grey;
+                      font-size: 18px;
+                      top: 55px;
+                      right:16px;
+                    }
+                    .add1{
+                      position: relative;
+                      display: flex;
+                      top: 95px;
+                      right: 115px;
+                      height: 32px;
+                      border-radius: 40px;
+                      padding: 6px 20px;
+                    }
+                    .add2{
+                      position: relative;
+                      top: 95px;
+                      right: 120px;
+                      height: 32px;
+                      border-radius: 40px;
+                      padding: 6px 20px;
+                    }
+                    .add3{
+                      position: relative;
+                      top: 95px;
+                      right: 123px;
+                      height: 32px;
+                      border-radius: 40px;
+                      padding: 6px 20px;
+                    }
+                    .add4{
+                      position: relative;
+                      top: 95px;
+                      right: 100px;
+                      height: 32px;
+                      border-radius: 40px;
+                      padding: 6px 20px;
+                    }
+                    
+                    .add5{
+                      position: relative;
+                      top: 92px;
+                      right: 120px;
+                      height: 32px;
+                      border-radius: 40px;
+                      padding: 6px 20px;
+                    }
+              
+                    .add6{
+                      position: relative;
+                      top: 92px;
+                      right: 155px;
+                      height: 32px;
+                      border-radius: 40px;
+                      padding: 6px 20px;
+                    }
+                    .add7{
+                      position: relative;
+                      top: 90px;
+                      right: 120px;
+                      height: 32px;
+                      border-radius: 40px;
+                      padding: 6px 20px;
+                    }
+                    .add8{
+                      position: relative;
+                      top: 90px;
+                      right: 100px;
+                      height: 32px;
+                      border-radius: 40px;
+                      padding: 6px 20px;
+                    }
+                  }
+/*filter*/
+.poster{
+  position: relative;
+  height: auto;
+  width: 200px;
+  top: -210px;
+  left: 15px;
+  border-radius: 5px;
+}
+.filter-container {
+    display: grid;
+    grid-template-columns: auto ;
+    gap: 10px;
+    padding: 10px;
+    width: 42vh;
+    margin-top: -75vh;
+    height: 90vh;
+  }
+  
+  .filter-container > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    font-size: 30px;
+  }
+
+  
+  .filter-section h1{
+    position: relative;
+    display: flex;
+    font-family: "Rajdhani", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+    top: -50px;
+
+ }
+
+ .filter-section hr{
+  position: relative;
+  display: flex;
+  top: -70px;
+
+ }
+
+ .filter-section h5{
+    position: relative;
+    display: flex;
+    font-family: "PT Sans Narrow", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+    top: -90px;
+
+ }
+
+.label1{
+    position: relative;
+    display: flex;
+    font-size: 16px;
+    top: -100px;
+    font-family: "Rajdhani", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.label2{
+    position: relative;
+    display: flex;
+    font-size: 16px;
+    top: -100px;
+    font-family: "Rajdhani", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .filter-section {
+    margin-bottom: 20px;
+  }
+  .filter-section h4{
+    position: relative;
+    display: flex;
+    font-family: "PT Sans Narrow", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+    top: -130px;
+  }
+
+  #priceRange {
+    height: 4px; 
+    
+  }
+  
+  #priceOutput {
+    position: relative;
+    display: flex;
+    margin-top: 2px; 
+    top: -150px;
+    left: 55px;
+    font-size: 20px;
+  }
+  
+  .range{
+    position: relative;
+    display: flex;
+    top: -160px;
+  }
+  
+  .dairyimg1{
+    position: relative;
+    display: flex;
+    width: 40vh;
+    height: 45vh;
+    border-radius: 5px;
+    top: -21vh;
+    left: -10px;
+  }
+            @media screen and (max-width: 800px) {
+              .poster{
+                position: relative;
+                height: auto;
+                width: 100px;
+                top: -300px;
+                left: -1px;
+
+              }
+          .filter-container {
+              position: relative;
+              width: 2vh;
+              top: 200px;
+            }
+            .filter-section h1{
+              position: relative;
+              display: flex;
+              font-family: "Rajdhani", sans-serif;
+              font-weight: 400;
+              font-style: normal;
+              font-size: 20px;
+              top: -50px;
+
+          }
+
+          .filter-section hr{
+            position: relative;
+            display: flex;
+            top: -70px;
+
+          }
+
+          .filter-section h5{
+              position: relative;
+              display: flex;
+              font-family: "PT Sans Narrow", sans-serif;
+              font-weight: 400;
+              font-style: normal;
+              font-size: 20px;
+              top: -90px;
+
+          }
+
+          .label1{
+              position: relative;
+              display: flex;
+              font-size: 13px;
+              top: -100px;
+              font-family: "Rajdhani", sans-serif;
+              font-weight: 600;
+              font-style: normal;
+          }
+
+          .label2{
+              position: relative;
+              display: flex;
+              font-size: 13px;
+              top: -100px;
+              font-family: "Rajdhani", sans-serif;
+              font-weight: 600;
+              font-style: normal;
+          }
+
+
+            .container {
+              max-width: 800px;
+              margin: 0 auto;
+              padding: 0px;
+            }
+            
+            .filter-section {
+              margin-bottom: 20px;
+            }
+            .filter-section h4{
+              position: relative;
+              display: flex;
+              font-family: "PT Sans Narrow", sans-serif;
+              font-weight: 400;
+              font-style: normal;
+              font-size: 20px;
+              top: -120px;
+            }
+
+            #priceRange {
+              height: 4px; 
+              
+            }
+            
+            #priceOutput {
+              position: relative;
+              display: flex;
+              margin-top: 2px; 
+              top: -130px;
+              left: 33px;
+              font-size: 13px;
+            }
+            
+            .range{
+              position: relative;
+              display: flex;
+              top: -140px;
+              width: 80px;
+            }
+            
+            .dairyimg1{
+              position: relative;
+              display: flex;
+              width: 40vh;
+              height: 45vh;
+              border-radius: 5px;
+              top: -21vh;
+              left: -10px;
+            }
+          }
+/*--description*/
+.description{
+  position: relative;
+  height: 200vh;
+}
+.info-container {
+    display: grid;
+    grid-template-columns: auto ;
+    gap: 10px;
+    background-color: rgb(0, 170, 255);
+    padding: 10px;
+    margin-top: 13vh;
+    height: 580px;
+  }
+  
+  .info-container > div {
+    text-align: center;
+    font-size: 30px;
+  }
+
+  .info-container img{
+    position: relative;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+  }
+  .img1 {
+    position: absolute;
+    z-index: 2;  
+    width: auto;
+    height: 90vh;
+  }
+  
+  .img2 {
+    position: relative;
+    display: flex;
+    top: -50vh;
+    height: auto;
+    width: 204vh;
+    left: -40px;
+  }
+  
+  .img3 {
+    position: relative;
+    display: flex;
+    top: -130vh;
+    height: auto;
+    width: 120vh;
+  }
+
+  .info-container h1{
+    position: relative;
+    display: flex;
+    top: -195vh;
+    left: 135vh;
+    font-family: "Sedan SC", serif;
+  font-weight: 400;
+  font-style: normal;
+
+  }
+
+  .info-container p{
+    position: relative;
+    display: flex;
+    top: -195vh;
+    left: 130vh;
+    font-family: "Rajdhani", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 20px;
+  width: 400px;
+  }
+
+         
+  /* description*/
+
+  .description-container {
+    position: relative;
+    display: grid;
+    grid-template-columns: auto ;
+    gap: 10px;
+    padding: 10px;
+    top: 15vh;
+    
+  }
+  
+  .description-container > div {
+   
+    text-align: center;
+    font-size: 30px;
+  }
+  
+  .description-container img{
+    position: relative;
+    width: auto;
+    height: 110vh;
+    top: -120px;
+  }
+  
+  .description h1{
+    position: relative;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 30px;
+    top: 6vh;
+    left: 80vh;
+  }
+
+  
+  @media screen and (max-width: 800px) {
+    .description h1{
+      position: relative;
+      left: 10vh;
+      top: 350px;
+      font-size: 30px;
+    }
+    .description-container img{
+      position: relative;
+      width: auto;
+      height: 60vh;
+      top: -100px;
+    }
+  }
+/* font section*/
+
+.desc-text-container {
+  position: relative;
+  display: grid;
+  grid-template-columns: auto ;
+  gap: 10px;
+  
+  padding: 10px;
+  height: 30vh;
+  width: 96vh;
+  top: -590px;
+  left: 98vh;
+}
+
+.desc-text-container > div {
+  
+  text-align: center;
+  font-size: 30px;
+
+}
+
+.desc-text-container h1{
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: italic;
+  font-size: 25px;
+  left: -29vh;
+  top: -20vh;
+  
+}
+
+.desc-text-container p{
+  position: relative;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 16px;
+  text-align: left;
+  top: -20vh;
+}
+@media screen and (max-width: 800px) {
+  .desc-text-container h1{
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: italic;
+    font-size: 16px;
+    left: -1vh;
+    top: -20vh;
+    
+  }
+
+  .desc-text-container {
+    position: relative;
+    display: grid;
+    grid-template-columns: auto ;
+    gap: 10px;
+    
+    padding: 10px;
+    height: 30vh;
+    width: 21vh;
+    top: -10px;
+    left: 23vh;
+  }
+  .desc-text-container p{
+    position: relative;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 10px;
+    text-align: left;
+    top: -20vh;
+  }
+}
+
+
+/* font section1*/
+
+.desc-text-container1 {
+  position: relative;
+  display: grid;
+  grid-template-columns: auto ;
+  gap: 10px;
+  
+  padding: 10px;
+  height: 30vh;
+  width: 96vh;
+  top: -560px;
+  left: 0vh;
+}
+
+.desc-text-container1 > div {
+  
+  text-align: center;
+  font-size: 30px;
+}
+
+.desc-text-container1 h1{
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: italic;
+  font-size: 25px;
+  left: 33vh;
+  top: -23vh;
+  
+}
+
+.desc-text-container1 p{
+  position: relative;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 16px;
+  text-align: right;
+  top: -23vh;
+}
+@media screen and (max-width: 800px) {
+  .desc-text-container1 {
+    position: relative;
+    display: grid;
+    grid-template-columns: auto ;
+    gap: 10px;
+    
+    padding: 10px;
+    height: 30vh;
+    width: 23vh;
+    top: -100px;
+    left: -1vh;
+  }
+  .desc-text-container1 h1{
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: italic;
+    font-size: 16px;
+    left: 3vh;
+    top: -23vh;
+    
+  }
+  
+  .desc-text-container1 p{
+    position: relative;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 10px;
+    text-align: right;
+    top: -23vh;
+  }
+}
+
+/* font section1*/
+
+.desc-text-container2 {
+  position: relative;
+  display: grid;
+  grid-template-columns: auto ;
+  gap: 10px;
+  
+  padding: 10px;
+  height: 30vh;
+  width: 96vh;
+  top: -580px;
+  left: 100vh;
+}
+
+.desc-text-container2 > div {
+  
+  text-align: center;
+  font-size: 30px;
+}
+
+.desc-text-container2 h1{
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: italic;
+  font-size: 25px;
+  left: -19vh;
+  top: -24vh;
+  
+}
+
+.desc-text-container2 p{
+  position: relative;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 16px;
+  text-align: left;
+  top: -24vh;
+}
+              @media screen and (max-width: 800px) {
+                .description-container{
+                  position: relative;
+                  top: 450px;
+                }
+                .desc-text-container2 {
+                  position: relative;
+                  display: grid;
+                  grid-template-columns: auto ;
+                  gap: 10px;
+                  
+                  padding: 10px;
+                  height: 30vh;
+                  width: 23vh;
+                  top: -222px;
+                  left: 22vh;
+                }
+                
+                      .desc-text-container2 h1{
+                        font-family: "Playfair Display", serif;
+                        font-optical-sizing: auto;
+                        font-weight: 600;
+                        font-style: italic;
+                        font-size: 16px;
+                        left: 0vh;
+                        top: -24vh;
+                        text-align: left;
+                        
+                      }
+
+                      .desc-text-container2 p{
+                        position: relative;
+                        font-family: "Montserrat", sans-serif;
+                        font-optical-sizing: auto;
+                        font-weight: 700;
+                        font-style: normal;
+                        font-size: 10px;
+                        text-align: left;
+                        top: -24vh;
+                      }
+
+              }
+
+/*footer*/
+
+.footer-container {
+  position: relative;
+  display: grid;
+  grid-template-columns:  25% 25% 25% 25% ;
+  gap: 10px;
+  
+  background:rgba(0, 0, 0, 0.863);
+ 
+  padding: 10px;
+  height: 70vh;
+  top: -20vh;
+}
+
+.footer-container > div {
+  
+  border-radius: 2px;
+  text-align: center;
+  font-size: 30px;
+  border-color: #fffbfb;
+  
+}
+
+.item1{
+  position: relative;
+  grid-row: 1 / span 5;
+  grid-column: 1;
+
+  
+}
+
+
+.item1 p{
+  position: relative;
+  color: rgba(245, 245, 245, 0.703);
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 15px;
+  text-align: left;
+  top: -35vh;
+
+    }
+
+    .item1 img{
+      position: relative;
+      height: auto;
+      width: 180px;
+      top: 50px;
+    }
+
+.item1 h1{
+ color: white;
+ font-family: "Rajdhani", sans-serif;
+ font-weight: 400;
+ font-style: normal;
+ font-size: 25px;
+ text-align: left;
+}
+.item2{
+  grid-row: 1 / span 5;
+  grid-column: 2;
+  position: relative;
+  left: 30px;
+}
+.item3{
+  grid-row: 1 / span 5;
+  grid-column: 3;
+}
+.item4{
+  grid-row: 1 / span 5;
+  grid-column: 4;
+  width: 45vh;
+}
+.item5{ 
+  position: relative;
+  grid-column: 1 /span 4;
+  grid-row: 6 / span 1;
+  width: 197vh;
+  top: -80px;
+}
+
+.item5 h1,h2,h3{
+  position: relative;
+  color: rgba(255, 255, 255, 0.436);
+  display: inline;
+  left: -45vh;
+}
+
+.item5 h1{
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 48px;
+}
+.item5 h3{
+  position: relative;
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 500;
+
+  font-style: normal;
+  font-size: 20px;
+  top: -8px;
+}
+.item5 h2{
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+    font-size: 48px;
+}
+.item6{
+  grid-column: 1 / span 4;
+}
+
+.item5 img{
+  position: relative;
+  display: inline;
+  height: 30px;
+  width: auto;
+  left: 190px;
+  opacity: 0.5;
+}
+
+
+.item2 h6{
+  position: relative;
+  color: white;
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-optical-sizing: auto;
+  font-size: 18px;
+  text-align: left;
+  top: -20px;
+}
+
+.product-links a{
+  text-decoration: none;
+  position: relative;
+  display: grid;
+  backdrop-filter: blur(40px);  
+  color: whitesmoke;
+  text-align: left;
+  font-size: 15px;
+  line-height: 40px;
+  top: -50px;
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+.useful-links h6{
+position: relative;
+  color: white;
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-style: normal;
+  font-size: 18px;
+  text-align: left;
+  top: -20px;
+}
+
+.useful-links a{
+  text-decoration: none;
+  position: relative;
+  display: grid;
+  backdrop-filter: blur(40px);  
+  color: whitesmoke;
+  text-align: left;
+  font-size: 15px;
+  line-height: 40px;
+  top: -50px;
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.useful-links h6{
+  position: relative;
+    color: white;
+    font-family: "Rajdhani", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    text-align: left;
+    top: -20px;
+}
+
+.item4 h6{
+  
+    position: relative;
+      color: white;
+      font-family: "Rajdhani", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      font-size: 18px;
+      text-align: left;
+      top: -20px;
+  
+}
+.item4 p{
+  position: relative;
+  display: grid;
+  backdrop-filter: blur(40px);  
+  color: whitesmoke;
+  text-align: left;
+  font-size: 15px;
+  line-height: 20px;
+  top: -50px;
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  left: 30px;
+  
+}
+.item4 img{
+position: relative;
+height: auto;
+width: 20px;
+left: -30px;
+top: 18px;
+}
+.item5 hr{
+  color: white;
+}
+
+.item6{
+  position: relative;
+  height:8px;
+  width: 196vh;
+  top: -10vh;
+}
+
+.item6 p{
+  position: relative;
+  color: white;
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  top: -30px;
+}
+
+@media screen and (max-width: 800px) {
+  .footer-container{
+    position: relative;
+    top:-700px;
+    display: block;
+    height: 250vh;
+  
+  }
+  .item5 hr{
+    position: relative;
+    display: none;
+  }
+  .item1{
+    position: relative;
+    top: 10vh;
+  }
+  .item1 h1{
+    position: relative;
+    top: -9vh;
+    justify-content: center;
+    text-align: center;
+  }
+  .item1 p{
+    position: relative;
+    justify-content: center;
+    text-align: center;
+  }
+ .item1 img{
+  position: relative;
+  top: -6vh;
+ }
+}
+

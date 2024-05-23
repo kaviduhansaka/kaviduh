@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="vegetable page.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bebas+Neue&family=Briem+Hand:wght@100..900&family=Fjalla+One&family=Freeman&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,196;1,196&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=PT+Sans+Narrow:wght@400;700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Rajdhani:wght@300;400;500;600;700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+        <section class="navbar">
+            <!--navbar section-->
+    
+                  
+                        <div class="logo"></div>
+                        <div class="nav-links">
+        
+                            <a href="#"></a>
+                            <a href="#"></a>
+                            <a href="#"></a>
+                            <a href="#"></a>
+                            <a href="#"></a>
+        
+                        </div>
+                    </nav>
+            </div>
+            
+        </section>
+    <section class="body">
+            <div class="main-img">
+                 <h1>Vegetables</h1>
+            </div>
+        
+    
+     <!--products-->       
+
+            <section class="best-seller-grid">
+                <div class="grid-object">
+            
+                </div>
+                
+                
+                <div class="grid-object">  
+                    
+                </div>
+                <div class="grid-object">  
+                  
+                </div> 
+                <div class="grid-object">
+                  
+                </div>
+            
+                </div>
+                <div class="grid-object">  
+                
+                </div> 
+                <div class="grid-object">
+                    
+                </div>
+                <div class="grid-object">
+                </div>
+                <div class="filter-container">
+                    <div>
+                        <div class="container">
+                            <div class="filter-section">
+                            <h1>Filter by</h1><hr>
+                            <h2>Category</h2>
+                            
+
+                            <label class="label1"><input type="checkbox" name="category" value="best-seller"> Best Seller</label>
+                            <label class="label2"><input type="checkbox" name="category" value="top-seller"> Top Seller</label>
+                            <label class="label1"><input type="checkbox" name="category" value="best-seller"> Hot Deals</label>
+                            <label class="label2"><input type="checkbox" name="category" value="top-seller"> Todays special</label>
+                            </div>
+                        
+                            <div class="filter-section 1">
+                            <h2>Price</h2>
+                            <input class="range" type="range" id="priceRange" name="price" min="0" max="100" value="50">
+                            <output class="range1" for="priceRange" id="priceOutput">$50</output>
+                            </div>
+                        
+                    
+                        </div>
+                    </div>
+                
+                </div>
+
+            </section>  
+        
+            <section class="location">
+                 <!--where came from-->
+
+                 <div class="catogary-heading">
+                    <h1>Venue</h1>
+                    <div class="headingline-3">_____________________________________</div>
+                    <div class="headingline-4">_____________________________________</div>
+                </div>
+                 <div class="location-container">
+                    <div>1</div>
+                    <div class="grid2">2</div>
+                    <div>3</div>  
+                    <div>4</div>
+                    <div class="grid5">5</div>
+                    
+                  </div>  
+            </section>
+      
+        </section>
+    </section>
+    </header>
+
+
+    <script>
+        const priceRange = document.getElementById('priceRange');
+        const priceOutput = document.getElementById('priceOutput');
+    
+        priceRange.addEventListener('input', function() {
+          priceOutput.value = '$' + this.value;
+        });
+
+    </script>
+
+</body>
+</html>

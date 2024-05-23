@@ -1,0 +1,1099 @@
+:root {
+--background-color:rgba(255, 255, 255, 0.898);
+--navigation-color: #ff0;
+--shadow-color:0 0 px rgba(0, 0, 0, 0.228);
+--border-color: 1px solid #ddd;
+--family-colot:rgb(5, 183, 49);
+--white-color:white;
+--background-color:rgba(255, 255, 255, 0.898);
+--theme-color:rgba(227, 104, 243, 0.722);
+}
+
+
+body{
+  padding: 0;
+  margin: 0;
+  background-color:var(--background-color);
+
+}
+
+.grid-container {
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+grid-gap: 10px;
+padding: 10px;
+width: 800px; /* Set your desired width */
+height: 500px; /* Set your desired height */
+}
+
+.grid-item {
+background-color: #fff;
+border: 1px solid #ddd;
+text-align: center;
+padding: 15px;
+font-size: 16px;
+}
+
+.grid-item-text {
+font-size: 14px;
+margin-top: 5px;
+}
+
+.more{
+  width: 300px;
+  display: flex;
+  left: -300px;
+}
+/*-----search bar-----*/
+/* navigation bar*/
+.navbar-container {
+display: grid;
+gap: 10px;
+padding: 2px;
+}
+
+
+.navbar {
+position: fixed;
+display: flex;
+justify-content: center;
+width: 95%;
+height: 20px;
+display: grid;
+top: 10px;
+grid-template-columns: auto 1fr;
+align-items: center;
+padding: 28px;
+left: 50%; /* Position the navbar from the center */
+transform: translateX(-50%); /* Center the navbar horizontally */
+background-color: #333;
+border-radius: 40px;
+color:var(--white-color);
+z-index: 1000;
+}
+
+.logo {
+font-size: 10px;
+
+}
+.logo img{
+position: relative;
+width: auto;
+height: 100px;
+top: -40px;
+}
+
+.nav-links {
+position: relative;
+display: grid;
+grid-template-columns: repeat(5, auto);
+gap: 50px;
+backdrop-filter: blur(40px);  
+justify-content: center; 
+padding: 2px 20px; /* Adjust padding for smaller screens */
+top: -17.5vh;
+left:55vh;
+font-family: "Oswald", sans-serif;
+}
+
+.nav-links a {
+position: relative;
+text-decoration: none;
+color: #fff;
+transition: color 0.3s;
+font-size: 20px;
+
+}
+.dropdown {
+position: relative;
+display: inline-block;
+}
+
+.dropdown-content {
+display: none;
+position: absolute;
+color: #000000;
+background-color: #f9f9f9;
+min-width: 160px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+padding: 12px 16px;
+z-index: 1;
+}
+.dropdown-content ol li a{
+color: #000000;
+}
+
+.dropdown:hover .dropdown-content {
+display: block;
+}
+
+.register{
+position: relative;
+display: flex;
+width: auto;
+height: 35px;
+top: -22vh;
+left: 160vh;
+opacity: 0.9;
+}
+.register a{
+position: relative;
+font-size: 20px;
+color: var(--background-color);
+left: 10px;
+top: px;
+text-decoration: none;
+font-family: "Oswald", sans-serif;
+}
+.cart{
+position: relative;
+display: flex;
+width: auto;
+height: 33px;
+top: -27.5vh;
+left: 175vh;
+opacity: 0.9;
+}
+
+.nav-links a:hover {
+color: var(--theme-color);
+}
+
+/* Media query for smaller screens */
+@media (max-width: 400px) {
+  .navbar {
+    padding: 15px; 
+  }
+
+  .nav-links {
+    padding: 0px 10px; 
+  }
+}
+/*--main image--*/
+.main-img{
+  position: relative;
+  display: flex;
+  top: 80px;
+  height:450px;
+  width: 1500px;
+  background-repeat: repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-image: url("./images/cosmaticslast.jpg");
+  background-size: 115%;
+  
+
+}
+
+.main-img h1{
+  position: relative;
+  display: flex;
+  color: var(--background-color);
+  left: 25%;
+  top: 0%;
+  font-size: 130px;
+  font-family: "Sedan SC", serif;
+  font-weight: 520;
+  font-style: normal;
+}
+@media screen and (max-width: 800px) {
+  .main-img{
+    position: relative;
+    display: flex;
+    top: 50px;
+    height:100px;
+    width: 100%;
+    background-repeat: repeat;
+    background-position: top;
+    background-attachment: fixed;
+    background-image: url ("./hero.jpg");
+    background-size: 25%;
+    background-position-x:50vh;
+    background-position-y: 52vh;
+  }
+  .main-img h1{
+    position: relative;
+    top: -0px;
+    left: 30%;
+    font-size: 35px;
+  }
+}
+
+/*body grid*/
+
+.grid-container {
+  position: relative;
+  display: grid;
+  grid-template-columns: 300px 950px;
+  gap: 1px;
+  padding: 10px;
+  top: 20vh;
+  width: 100%;
+}
+
+.grid-container > div {
+  
+  text-align: center;
+  font-size: 30px;
+
+}
+/*--table product*/
+
+table {
+  width: 80%;
+  border-collapse: collapse;
+  margin-top: 0px;
+}
+th, td {
+  padding: 20px 40px;
+  text-align: center;
+  border-bottom: var(--border-color);
+  
+}
+
+th {
+  position: relative;
+  display: flex; /* Use flexbox */
+  align-items: center;
+  justify-content: center;
+  left: 50vh;
+  border-bottom: none;
+  border-bottom: var(--border-color);
+  
+  
+}
+td img {
+  max-width: auto;
+  max-height: 200px;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+
+
+td img:hover {
+  transition: transform 0.5s ease;
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-color);
+}
+
+
+  /*font*/
+  .tablefont-container {
+    position: relative;
+    display: grid;
+    grid-template-columns: auto;
+    padding: 5px;
+    left:-9vh;
+    width: 27vh;
+  }
+  
+  .tablefont-container > div {
+    text-align: left;
+    font-size: 30px;
+  }
+
+  .tablefont-container h1{
+    position: relative;
+    font-size: 25px;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 530;
+    font-style: normal;
+    top: 30px;
+  }
+
+  .tablefont-container p{
+    position: relative;
+    font-size: 20px;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    top: 0px;
+    width: 250px;
+  }
+
+  .tablefont-container .price{
+    position: relative;
+    top: -30px;
+  }
+  .tablefont-container button{
+    position: relative;
+    top:-50px ;
+    position: relative;
+    height: 6vh;
+    width: 20vh;
+  }
+  
+  @media screen and (max-width: 800px) {
+    table {
+      position: relative;
+    
+      width: 10%;
+      height: 30px;
+      top: -10vh;
+     left: -25vh;
+    }
+    th, td {
+      padding: auto;
+      
+      text-align: center;
+      border-bottom: var(--border-color);
+      
+    }
+    .tablefont-container h1{
+      position: relative;
+      display: flex;
+      font-size: 15px;
+      font-family: "Oswald", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 530;
+      font-style: normal;
+     justify-content: center;
+     align-items: center;
+      top: 15px;
+    }
+
+    .tablefont-container h1{
+      position: relative;
+      left: 60px;
+    }
+.tablefont-container p{
+  position: relative;
+  left: 60px;
+  text-align: center;
+}
+.tablefont-container button{
+  position: relative;
+  width: auto;
+  height: 40px;
+  top: -30px;
+  left: 150px;
+}
+    td{
+      position: relative;
+      display: block;
+    }
+    th {
+      position: relative;
+      display: flex; /* Use flexbox */
+      align-items: center;
+      justify-content: center;
+      left: 50vh;
+      border-bottom: none;
+      left: -30px;
+      border-bottom: var(--border-color);
+      
+      
+    }
+    .tablefont-container > div {
+      position: relative;
+      text-align: left;
+      font-size: 30px;
+      display: block;
+    }
+
+    td img {
+      position: relative;
+      max-width: auto;
+      max-height: 130px;
+      border-radius: 10px;
+      transition: transform 0.3s ease;
+      left: -30px;
+    }
+
+  }
+
+
+  /*filter*/
+
+  .poster{
+    position: relative;
+    height: auto;
+    width: 200px;
+    top: -100px;
+    left: -40px;
+    border-radius: 5px;
+  }
+  .filter-container {
+    position: relative;
+    display: grid;
+    gap: 10px;
+    padding: 20px 0px;
+    width: 48vh;
+    height: 30vh;
+  }
+  
+  .filter-container > div {
+   
+    text-align: center;
+    font-size: 30px;
+
+  }
+
+  .filter-section h1{
+    position: relative;
+    display: flex;
+    font-family: "Rajdhani", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+    top: -50px;
+    
+ }
+
+ .filter-section hr{
+  position: relative;
+  display: flex;
+  top: -80px;
+ }
+
+ .filter-section h4{
+    position: relative;
+    display: flex;
+    font-family: "PT Sans Narrow", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+    top: -90px;
+ }
+
+ .filter-section h5{
+    position: relative;
+    display: flex;
+    font-family: "PT Sans Narrow", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+    top: -15vh;
+ }
+
+.label1{
+    position: relative;
+    display: flex;
+    font-size: 16px;
+    top: -100px;
+    font-family: "Rajdhani", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+}
+
+.label2{
+    position: relative;
+    display: flex;
+    font-size: 16px;
+    top: -100px;
+    font-family: "Rajdhani", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+}
+
+.filter-section {
+  
+    margin-bottom: 20px;
+  }
+
+  #priceRange {
+    height: 4px; 
+  }
+  
+  #priceOutput {
+    position: relative;
+    display: flex;
+    margin-top: 2px; 
+    top:-16vh;
+    font-size: 20px;
+    left: 50px;
+  }
+  
+  .range{
+    position: relative;
+    display: flex;
+    top: -18vh;
+  }
+
+  @media screen and (max-width: 800px) {
+    .poster{
+      position: relative;
+      height: auto;
+      width: 80px;
+      top: -170px;
+      left: -110px;
+      border-radius: 5px;
+    }
+    .filter-container {
+      position: relative;
+      display: grid;
+      gap: 10px;
+      padding: 20px 0px;
+      width: 20px;
+      height: 30vh;
+      
+    }
+    .filter-section {
+      margin-bottom: 20px;
+    }
+    
+    .filter-section hr{
+      display: none;
+     }
+
+     .label1{
+      position: relative;
+    display: flex;
+    font-size: 10px;
+    font-weight: 400;
+    top: -120px;
+
+    }
+
+    .label2{
+      position: relative;
+    display: flex;
+    font-size: 10px;
+    font-weight: 400;
+    top: -120px;
+    }
+    .filter-section h1{
+      position: relative;
+      display: flex;
+      font-family: "Rajdhani", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      font-size: 25px;
+      top: -70px;
+  
+   }
+   .filter-section hr{
+    position: relative;
+    top: -70px;
+   }
+
+   .range{
+    position: relative;
+    top: -175px;
+  width: 60px;
+   }
+   
+   .product{
+    position: relative;
+    top: -7vh;
+   }
+   .filter-section h4{
+    position: relative;
+    display: flex;
+    font-family: "PT Sans Narrow", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    top: -95px;
+}
+
+.filter-section h5{
+  position: relative;
+  display: flex;
+  font-family: "PT Sans Narrow", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+ top: -155px;
+}
+
+ #priceOutput {
+  position: relative;
+  display: flex;
+  margin-top: 2px; 
+  top:-18vh;
+  font-size: 20px;
+  left: 15px;
+}
+
+.filter-add img{
+  position: relative;
+  height: auto;
+  width: 12vh;
+  border-radius: 4px;
+  top: -20vh;
+}
+
+.filter-add h1{
+  position: relative;
+  text-align: justify;
+ 
+  font-family: "Oswald", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 15px;
+    color: var(--family-colot);
+    top: -300px;
+    left: 68px;
+  
+  
+}
+  }
+  /*--background*/
+
+  .img-container {
+    position: relative;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 15px;
+    padding: 10px;
+    top: 72vh;
+    height: 400px;
+  }
+  
+  .img-container > div {
+   
+    text-align: center;
+    font-size: 30px;
+  }
+
+  .img-container div img{
+    position: relative;
+    height: 460px;
+    width: auto;
+  }
+
+  .img-container h1{
+    position: relative;
+    top: -370px;
+    font-family: "Merriweather", serif;
+    font-weight: 300;
+    font-size: 45px;
+    font-style: normal;
+    text-align: justify;
+    left: 75px;
+    color: var(--white-color);
+  }
+
+  .img-container h3{
+    position: relative;
+    top: -600px;
+    font-family: "Merriweather", serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 15px;
+    text-align: justify;
+    left: -33vh;
+    color: var(--white-color);
+  }
+
+  .img-container h2{
+    position: relative;
+    top: -400px;
+    font-family: "Merriweather", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 25px;
+    text-align: justify;
+    left: 3vh;
+    color: var(--white-color);
+  }
+
+  .img-container button{
+    position: relative;
+    top: -360px;
+    left: -56vh;
+    height: 6vh;
+    width: 20vh;
+  }
+
+  
+  .font h1{
+    position: relative;
+    top: -400px;
+    font-family: "Merriweather", serif;
+    font-weight: 300;
+    font-size: 45px;
+    font-style: normal;
+    text-align: justify;
+    left: 75px;
+    color: var(--white-color);
+  }
+
+  .font h3{
+    position: relative;
+    top: -675px;
+    font-family: "Merriweather", serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 15px;
+    text-align: justify;
+    left: -34vh;
+    color: var(--white-color);
+  }
+
+  .font h2{
+    position: relative;
+    top: -430px;
+    font-family: "Merriweather", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 25px;
+    text-align: justify;
+    left: 19px;
+    color: var(--white-color);
+  }
+
+  .font button{
+    position: relative;
+    top: -390px;
+    left: -56.5vh;
+    height: 6vh;
+    width: 20vh;
+  }
+  @media screen and (max-width: 800px) {
+    .img-container {
+      position: relative;
+      display: grid;
+      grid-template-columns: auto;
+      gap: 5px;
+      padding: 5px;
+      top: 195vh;
+      height: 100px;
+    }
+    .img-container div img{
+      position: relative;
+      height: 250px;
+      width: auto;
+    }
+    .img-container > div {
+   position: relative;
+      text-align: center;
+      font-size: 30px;
+      height: 300px;
+    }
+    .img-container h1{
+      position: relative;
+      top: -270px;
+      font-family: "Merriweather", serif;
+      font-weight: 300;
+      font-size: 40px;
+      font-style: normal;
+      text-align: justify;
+      left: 65px;
+      color: var(--white-color);
+    }
+  
+    .img-container h3{
+     display: none;
+    }
+  
+    .img-container h2{
+   display: none;
+    }
+    .img-container button{
+      position: relative;
+      top: -280px;
+      left: -10vh;
+      height: 5vh;
+      width: 10vh;
+    }
+    .font button{
+      position: relative;
+      top: -290px;
+      left: -10vh;
+      height: 5vh;
+      width: 10vh;
+    }
+    
+  .font h1{
+    position: relative;
+    top: -270px;
+    font-family: "Merriweather", serif;
+    font-weight: 300;
+    font-size: 36px;
+    font-style: normal;
+    text-align: justify;
+    left: 60px;
+    color: var(--white-color);
+  }
+
+  .font h3{
+    display: none;
+  }
+
+  .font h2{
+   display: none;
+  }
+
+  
+  }
+
+
+  /*footer*/
+
+  .footer-container {
+    position: relative;
+    display: grid;
+    grid-template-columns:  25% 25% 25% 25% ;
+    gap: 10px;
+    
+    background:rgba(0, 0, 0, 0.863);
+   
+    padding: 10px;
+    height: 70vh;
+    top: 90vh;
+  }
+  
+  .footer-container > div {
+    
+    border-radius: 2px;
+    text-align: center;
+    font-size: 30px;
+    border-color: var(--white-color);
+    
+  }
+
+  .item1{
+    position: relative;
+    grid-row: 1 / span 5;
+    grid-column: 1;
+
+    
+  }
+  
+  
+  .item1 p{
+    position: relative;
+    color: rgba(245, 245, 245, 0.703);
+    font-family: "Rajdhani", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-style: normal;
+    font-size: 15px;
+    text-align: left;
+    top: -35vh;
+  
+      }
+
+      .item1 img{
+        position: relative;
+        height: auto;
+        width: 180px;
+        top: 50px;
+      }
+
+  .item1 h1{
+   color: white;
+   font-family: "Rajdhani", sans-serif;
+   font-weight: 400;
+   font-style: normal;
+   font-size: 25px;
+   text-align: left;
+  }
+  .item2{
+    grid-row: 1 / span 5;
+    grid-column: 2;
+    position: relative;
+    left: 30px;
+  }
+  .item3{
+    grid-row: 1 / span 5;
+    grid-column: 3;
+  }
+  .item4{
+    grid-row: 1 / span 5;
+    grid-column: 4;
+    width: 45vh;
+  }
+  .item5{ 
+    position: relative;
+    grid-column: 1 /span 4;
+    grid-row: 6 / span 1;
+    width: 197vh;
+    top: -80px;
+  }
+
+  .item5 h1,h2,h3{
+    position: relative;
+    color: rgba(255, 255, 255, 0.436);
+    display: inline;
+    left: -45vh;
+  }
+
+  .item5 h1{
+    font-family: "Rajdhani", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 48px;
+  }
+  .item5 h3{
+    position: relative;
+    font-family: "Rajdhani", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 20px;
+    top: -8px;
+  }
+  .item5 h2{
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+      font-size: 48px;
+  }
+  .item6{
+    grid-column: 1 / span 4;
+  }
+
+  .item5 img{
+    position: relative;
+    display: inline;
+    height: 30px;
+    width: auto;
+    left: 190px;
+    opacity: 0.5;
+  }
+
+  
+  .item2 h6{
+    position: relative;
+    color: white;
+    font-family: "Rajdhani", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    text-align: left;
+    top: -20px;
+  }
+
+  .product-links a{
+    text-decoration: none;
+    position: relative;
+    display: grid;
+    backdrop-filter: blur(40px);  
+    color: whitesmoke;
+    text-align: left;
+    font-size: 15px;
+    line-height: 40px;
+    top: -50px;
+    font-family: "Rajdhani", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+
+.useful-links h6{
+  position: relative;
+    color: white;
+    font-family: "Rajdhani", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    text-align: left;
+    top: -20px;
+}
+  
+  .useful-links a{
+    text-decoration: none;
+    position: relative;
+    display: grid;
+    backdrop-filter: blur(40px);  
+    color: whitesmoke;
+    text-align: left;
+    font-size: 15px;
+    line-height: 40px;
+    top: -50px;
+    font-family: "Rajdhani", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .useful-links h6{
+    position: relative;
+      color: white;
+      font-family: "Rajdhani", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      font-size: 18px;
+      text-align: left;
+      top: -20px;
+  }
+
+  .item4 h6{
+    
+      position: relative;
+        color: white;
+        font-family: "Rajdhani", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 18px;
+        text-align: left;
+        top: -20px;
+    
+  }
+  .item4 p{
+    position: relative;
+    display: grid;
+    backdrop-filter: blur(40px);  
+    color: whitesmoke;
+    text-align: left;
+    font-size: 15px;
+    line-height: 20px;
+    top: -50px;
+    font-family: "Rajdhani", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    left: 30px;
+    
+  }
+.item4 img{
+  position: relative;
+  height: auto;
+  width: 20px;
+  left: -30px;
+  top: 18px;
+}
+  .item5 hr{
+    color: white;
+  }
+
+  .item6{
+    position: relative;
+    height:8px;
+    width: 196vh;
+    top: -10vh;
+  }
+
+  .item6 p{
+    position: relative;
+    color: white;
+    font-family: "Rajdhani", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    top: -30px;
+  }
+
+
+  @media screen and (max-width: 800px) {
+    .footer-container{
+      position: relative;
+      top: 2300px;
+      display: block;
+      height: 350vh;
+    
+    }
+    .item1{
+      position: relative;
+      top: 10vh;
+    }
+    .item1 h1{
+      position: relative;
+      top: -9vh;
+      justify-content: center;
+      text-align: center;
+    }
+    .item1 p{
+      position: relative;
+      justify-content: center;
+      text-align: center;
+    }
+   .item1 img{
+    position: relative;
+    top: -6vh;
+   }
+  }

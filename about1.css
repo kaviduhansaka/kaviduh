@@ -1,0 +1,816 @@
+:root{
+  --background-color:rgba(255, 255, 255, 0.898);
+  --theme-color:rgb(0, 255, 64);
+  --back-theme:#333;
+}
+
+
+
+body{
+  padding: 0;
+  margin: 0;
+  background-color:var(--background-color);
+
+}
+
+.grid-container {
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+grid-gap: 10px;
+padding: 10px;
+width: 800px; /* Set your desired width */
+height: 500px; /* Set your desired height */
+}
+
+.grid-item {
+background-color: #fff;
+border: 1px solid #ddd;
+text-align: center;
+padding: 15px;
+font-size: 16px;
+}
+
+.grid-item-text {
+font-size: 14px;
+margin-top: 5px;
+}
+
+.more{
+  width: 300px;
+  display: flex;
+  left: -300px;
+}
+/*-----search bar-----*/
+/* navigation bar*/
+.navbar-container {
+display: grid;
+gap: 10px;
+padding: 2px;
+}
+
+
+.navbar {
+position: fixed;
+display: flex;
+justify-content: center;
+width: 95%;
+height: 20px;
+display: grid;
+top: 10px;
+grid-template-columns: auto 1fr;
+align-items: center;
+padding: 28px;
+left: 50%; /* Position the navbar from the center */
+transform: translateX(-50%); /* Center the navbar horizontally */
+background-color: #333;
+border-radius: 40px;
+color:var(--white-color);
+z-index: 1000;
+}
+
+.logo {
+font-size: 10px;
+
+}
+.logo img{
+position: relative;
+width: auto;
+height: 100px;
+top: -40px;
+}
+
+.nav-links {
+position: relative;
+display: grid;
+grid-template-columns: repeat(5, auto);
+gap: 50px;
+backdrop-filter: blur(40px);  
+justify-content: center; 
+padding: 2px 20px; /* Adjust padding for smaller screens */
+top: -17.5vh;
+left:55vh;
+font-family: "Oswald", sans-serif;
+}
+
+.nav-links a {
+position: relative;
+text-decoration: none;
+color: #fff;
+transition: color 0.3s;
+font-size: 20px;
+
+}
+.dropdown {
+position: relative;
+display: inline-block;
+}
+
+.dropdown-content {
+display: none;
+position: absolute;
+color: #000000;
+background-color: #f9f9f9;
+min-width: 160px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+padding: 12px 16px;
+z-index: 1;
+}
+.dropdown-content ol li a{
+color: #000000;
+}
+
+.dropdown:hover .dropdown-content {
+display: block;
+}
+
+.register{
+position: relative;
+display: flex;
+width: auto;
+height: 35px;
+top: -22vh;
+left: 160vh;
+opacity: 0.9;
+}
+.register a{
+position: relative;
+font-size: 20px;
+color: var(--background-color);
+left: 10px;
+top: px;
+text-decoration: none;
+font-family: "Oswald", sans-serif;
+}
+.cart{
+position: relative;
+display: flex;
+width: auto;
+height: 33px;
+top: -27.5vh;
+left: 175vh;
+opacity: 0.9;
+}
+
+.nav-links a:hover {
+color: var(--theme-color);
+}
+
+/* Media query for smaller screens */
+@media (max-width: 400px) {
+  .navbar {
+    padding: 15px; 
+  }
+
+  .nav-links {
+    padding: 0px 10px; 
+  }
+}
+
+  /*--main image*/
+
+  
+/*--our story--*/
+
+.head1{
+    position: relative;
+    display: inline-block; 
+    left: 10px;
+    font-size: 90px;
+    font-family: "Sedan SC", serif;
+    font-weight: 400;
+    font-style: normal;
+    animation: fadeRight 1s ease-out forwards;
+    animation-delay: 0.1s;
+    top: 2px;
+    color: #000000;
+}
+
+.head2{
+    position: relative;
+    display: inline-block; 
+    left: 10px;
+    bottom: 50px;
+    font-size: 90px;
+    font-family: "Sedan SC", serif;
+    font-weight: 400;
+    font-style: normal;
+    animation: fadeRight 1s ease-out backwards;
+    animation-delay: 0.1s;
+}
+
+@keyframes fadeRight {
+    from {
+      opacity: 0;
+      transform: translateY(20px); /* Start from 50px to the right */
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0); /* Fade in while moving to the original position */
+    }
+  }
+
+.story-container {
+  position: relative;
+    display: grid;
+    grid-template-columns: auto auto ;
+    gap: 10px;
+    padding: 10px;
+    top: 20vh;
+  }
+  
+  .story-container > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    font-size: 30px;
+  }
+
+  .story-container img{
+    position: relative;
+    display: flex;
+    width: auto;
+    height: 100vh;
+    object-fit: contain;
+       
+
+  }
+
+  .text p{
+    position: relative;
+    font-family: "Rajdhani", sans-serif;
+    font-size: 20px;
+    animation: fadeRight 1s ease-out backwards;
+    animation-delay: 0.2s;
+    top: -40px;
+  }
+  @media screen and (max-width: 800px) {
+    .head1{
+      position: relative;
+      font-size: 45px;
+    
+      
+    }
+    .head2{
+      position: relative;
+      font-size: 45px;
+      
+      
+    }
+    .story-container {
+      position: relative;
+        display: grid;
+        grid-template-columns: 45vh ;
+        gap: 10px;
+        padding: 10px;
+        top: 18vh;
+      
+      }
+      .story-container img{
+        position: relative;
+        width: auto;
+        height: 65vh;
+        left: 3px;
+      }
+      
+  }
+
+  /*branches*/
+.branches h1{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 150px;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 40px;
+  
+  }
+  
+  .line{
+    position: relative;
+    left: 400px;
+    top:-28px;
+  }
+  
+  .line1{
+    position: relative;
+    left: 720px;
+    top: -84px;
+  }
+
+  /*branch 1*/
+
+  .branch-container {
+    position: relative;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px;
+    padding: 10px;
+    top:25vh;
+    background-color: rgb(201, 194, 194);
+  }
+  
+  .branch-container > div {
+    text-align: center;
+    font-size: 30px;
+  }
+  
+  .map4{
+  grid-row:2;
+  grid-column:1/ span 2;
+  }
+
+  .map{
+    position: relative;
+    display: flex;
+    top: 30px ;
+  }
+  .map2 img{
+    position: relative;
+    height: 60vh;
+    width: auto;
+  }
+  .map3 h1{
+    position: relative;
+        font-family: "Sedan SC", serif;
+    font-weight: 400;
+    font-style: normal;
+  top: -20px;
+  font-size: 40px;
+  }
+
+  .map3 p{
+    position: relative;
+    font-family: "Rajdhani", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    top: -20px;
+  }
+
+  .map iframe{
+    position: relative;
+    display: flex;
+    height: 50vh;
+    width: 100%;
+    top: 200px;
+    border-radius: 5px;
+  }
+
+  @media screen and (max-width: 800px) {
+    .branch-container {
+      position: relative;
+      display: grid;
+      grid-template-columns: auto;
+      gap: 10px;
+      padding: 10px;
+      top:15vh;
+      height: 100vh;
+      background-color: rgb(201, 194, 194);
+    }
+    .map2 img{
+      position: relative;
+      height: 28vh;
+      width: auto;
+    }
+    .map2{
+      grid-row:1 ;
+      grid-column:1 / sapn 2;
+      }
+    
+      .map3{
+        position: relative;
+        grid-row: 1;
+        grid-column:2;
+        top: 30vh;
+      }
+      .map{
+        position: relative;
+        display: flex;
+        top: 120px ;
+        left: 45px;
+      }
+      .map iframe{
+        position: relative;
+        display: flex;
+        height: 0vh;
+        width: 80%;
+        top: -20vh;
+        border-radius: 5px;
+      }
+      
+  .map3 p{
+    position: relative;
+    font-family: "Rajdhani", sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    top: -20px;
+    left: 40px;
+  }
+  .map3 h1{
+    position: relative;
+        font-family: "Sedan SC", serif;
+    font-weight: 400;
+    font-style: normal;
+  top: -20px;
+  font-size: 30px;
+  left: 40px;
+  }
+
+    .map4{
+      position: relative;
+      grid-column: 1 / span 2;
+      grid-row:5 / span 60;
+      top: 20vh;
+
+    }
+    
+      
+      
+    
+  }
+  /*branch2*/
+
+  .branch1-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px;
+    padding: 10px;
+    top: 30px;
+    
+  }
+  
+  .branch1-container > div {
+    text-align: center;
+    font-size: 30px;
+  }
+  
+   
+  .map5{
+    position: relative;
+    grid-row:3;
+    grid-column:1/ span 2;
+    top: 20vh;
+    left: -20px;
+    height: 250px;
+    }
+  
+    .map3 img{
+      position: relative;
+      height: 60vh;
+      width: auto;
+    }
+    .map2 h1{
+      position: relative;
+          font-family: "Sedan SC", serif;
+      font-weight: 400;
+      font-style: normal;
+      font-size: 40px;
+    top: -30px;
+    }
+  
+    .map2 p{
+      position: relative;
+      font-family: "Rajdhani", sans-serif;
+      font-size: 20px;
+      font-weight: 500;
+      top: -30px;
+    }
+  
+    .map iframe{
+      position: relative;
+      display: flex;
+      height: 30vh;
+      width: 100%;
+      top: -340px;
+    }
+    @media screen and (max-width: 800px) {
+      .branch1-container {
+        position: relative;
+        display: grid;
+        grid-template-columns: auto;
+        gap: 10px;
+        padding: 10px;
+        top:15vh;
+        background-color: rgb(201, 194, 194);
+      }
+      .map2{
+        position: relative;
+        width: 40vh;
+      }
+      .map2 h1{
+        position: relative;
+        font-family: "Sedan SC", serif;
+    font-weight: 400;
+    font-style: normal;
+  top: -20px;
+  font-size: 30px;
+  left: 20px;
+  }
+  .map2 p{
+    position: relative;
+    font-family: "Rajdhani", sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    top: -20px;
+    left: 10px;
+  }
+    .map3 img{
+      position: relative;
+      height: 24vh;
+      width: auto;
+      top: -40px;
+      left: 10px;
+    }
+  }
+       
+    
+
+    /*table*/
+
+    h2 {
+        text-align: center;
+      }
+      
+      table {
+        position: relative;
+        width: 80%;
+        margin: 0 auto;
+        border-collapse: collapse;
+        background-color: rgba(144, 238, 144, 0.495);
+        top: 30vh;
+   }
+      
+      th, td {
+        border: 1px solid #ddd;
+        padding: 50px;
+        text-align: left;
+        background-color: rgba(144, 238, 144, 0.439);
+      }
+      
+      thead {
+        background-color: #f2f2f2;
+      }
+      
+      tfoot {
+        background-color: #f2f2f2;
+        font-weight: bold;
+      }
+      
+      tfoot td {
+        text-align: center;
+      }
+
+
+
+
+
+    /*footer*/
+
+.footer-container {
+  position: relative;
+  display: grid;
+  grid-template-columns:  25% 25% 25% 25% ;
+  gap: 10px;
+  
+  background:rgba(0, 0, 0, 0.863);
+ 
+  padding: 10px;
+  height: 70vh;
+  top: 40vh;
+}
+
+.footer-container > div {
+  
+  border-radius: 2px;
+  text-align: center;
+  font-size: 30px;
+  border-color: #fffbfb;
+  
+}
+
+.item1{
+  position: relative;
+  grid-row: 1 / span 5;
+  grid-column: 1;
+
+  
+}
+
+
+.item1 p{
+  position: relative;
+  color: rgba(245, 245, 245, 0.703);
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 15px;
+  text-align: left;
+  top: -35vh;
+
+    }
+
+    .item1 img{
+      position: relative;
+      height: auto;
+      width: 180px;
+      top: 50px;
+    }
+
+.item1 h1{
+ color: white;
+ font-family: "Rajdhani", sans-serif;
+ font-weight: 400;
+ font-style: normal;
+ font-size: 25px;
+ text-align: left;
+}
+.item2{
+  grid-row: 1 / span 5;
+  grid-column: 2;
+  position: relative;
+  left: 30px;
+}
+.item3{
+  grid-row: 1 / span 5;
+  grid-column: 3;
+}
+.item4{
+  grid-row: 1 / span 5;
+  grid-column: 4;
+  width: 45vh;
+}
+.item5{ 
+  position: relative;
+  grid-column: 1 /span 4;
+  grid-row: 6 / span 1;
+  width: 197vh;
+  top: -80px;
+}
+
+.item5 h1,h2,h3{
+  position: relative;
+  color: rgba(255, 255, 255, 0.436);
+  display: inline;
+  left: -45vh;
+}
+
+.item5 h1{
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 48px;
+}
+.item5 h3{
+  position: relative;
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 500;
+
+  font-style: normal;
+  font-size: 20px;
+  top: -8px;
+}
+.item5 h2{
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+    font-size: 48px;
+}
+.item6{
+  grid-column: 1 / span 4;
+}
+
+.item5 img{
+  position: relative;
+  display: inline;
+  height: 30px;
+  width: auto;
+  left: 190px;
+  opacity: 0.5;
+}
+
+
+.item2 h6{
+  position: relative;
+  color: white;
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-optical-sizing: auto;
+  font-size: 18px;
+  text-align: left;
+  top: -20px;
+}
+
+.product-links a{
+  text-decoration: none;
+  position: relative;
+  display: grid;
+  backdrop-filter: blur(40px);  
+  color: whitesmoke;
+  text-align: left;
+  font-size: 15px;
+  line-height: 40px;
+  top: -50px;
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+.useful-links h6{
+position: relative;
+  color: white;
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-style: normal;
+  font-size: 18px;
+  text-align: left;
+  top: -20px;
+}
+
+.useful-links a{
+  text-decoration: none;
+  position: relative;
+  display: grid;
+  backdrop-filter: blur(40px);  
+  color: whitesmoke;
+  text-align: left;
+  font-size: 15px;
+  line-height: 40px;
+  top: -50px;
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.useful-links h6{
+  position: relative;
+    color: white;
+    font-family: "Rajdhani", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    text-align: left;
+    top: -20px;
+}
+
+.item4 h6{
+  
+    position: relative;
+      color: white;
+      font-family: "Rajdhani", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      font-size: 18px;
+      text-align: left;
+      top: -20px;
+  
+}
+.item4 p{
+  position: relative;
+  display: grid;
+  backdrop-filter: blur(40px);  
+  color: whitesmoke;
+  text-align: left;
+  font-size: 15px;
+  line-height: 20px;
+  top: -50px;
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  left: 30px;
+  
+}
+.item4 img{
+position: relative;
+height: auto;
+width: 20px;
+left: -30px;
+top: 18px;
+}
+.item5 hr{
+  color: white;
+}
+
+.item6{
+  position: relative;
+  height:8px;
+  width: 196vh;
+  top: -10vh;
+}
+
+.item6 p{
+  position: relative;
+  color: white;
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  top: -30px;
+}
+
+
+      
